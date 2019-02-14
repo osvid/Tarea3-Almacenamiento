@@ -211,7 +211,7 @@ public class ApplicationTest {
         ApplicationTest.pause(PAUSE);
 
         File f = mActivityRule.getActivity().getExternalFilesDir(null);
-        String file = f.getAbsolutePath() + "/" + MainActivity.fichero;
+        String file = f.getAbsolutePath() + "/" + MainActivity.fileName;
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
