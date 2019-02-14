@@ -12,13 +12,13 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private ArrayList<String> statistics;
     private Button button;
-    public static final String fileName="estatistics.txt";
+    public static final String fileName="statistics.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        estadisticas = new ArrayList<String>();
+        statistics = new ArrayList<String>();
 
 		  // TODO
 		  // Assign the reference to button using findViewById
@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     private String getFilePath(){
-	     File f = getExternalFilesDir(null);
-        return f.getAbsolutePath() + "/" + MainActivity.fichero;
+	    File f = getExternalFilesDir(null);
+        return f.getAbsolutePath() + "/" + MainActivity.fileName;
 	 }
 
     @Override
@@ -60,6 +60,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void setEstadisticas(ArrayList<String> statistics) {
 	     // This is a method that will be used by the test to populate the ArrayList
-        this.statistics = estatistics;
+        this.statistics = statistics;
     }
 }
