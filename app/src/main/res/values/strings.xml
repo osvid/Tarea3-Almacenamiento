@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tarea3</string>
+    <string name="prefs_name">Settings</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_atras">Back</string>
+    <string name="boton1">Save statistics</string>
+    <string name="boton2">Save prefs</string>
+    <string name="juegos_set">Games</string>
+    <string name="num_sets">Sets</string>
+    <string name="punto_oro">Golden point</string>
+</resources>
